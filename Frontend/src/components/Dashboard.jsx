@@ -174,6 +174,7 @@ const Dashboard = () => {
           avatar: "/api/placeholder/40/40",
           eventData: event,
         })),
+
     ],
     departments: [
       { name: "Health", count: 342, color: "#ef4444ff" },
@@ -505,6 +506,7 @@ const Dashboard = () => {
                 <p className={`text-xs sm:text-sm font-medium ${isDarkMode ? "text-red-400" : "text-red-700"}`}>
                   Upcoming Events
                 </p>
+
                 <p className={`text-2xl sm:text-3xl font-bold ${isDarkMode ? "text-red-500" : "text-red-900"}`}>
                   {dashboardData.kpis.upcomingEvents.value}
                 </p>
@@ -513,9 +515,11 @@ const Dashboard = () => {
                 </p>
               </div>
               <div className="bg-white/30 bg-opacity-30 rounded-lg sm: transition-transform duration-200 hover:rotate-12">
+
                 <span className="text-xl sm:text-2xl">
                   <FaCalendarAlt className={`${isDarkMode ? "bg-gray-900 text-red-500" : "text-red-900"}`} />
                 </span>
+
               </div>
             </div>
           </div>
@@ -1582,8 +1586,10 @@ const Dashboard = () => {
         </div>
       )}
 
+
       {showProfileDropdown && <div className="fixed inset-0 z-40" onClick={() => setShowProfileDropdown(false)} />}
     </div>
+
   )
 }
 
